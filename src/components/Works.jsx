@@ -43,10 +43,9 @@ const WorksSection = () => {
   };
 
   return (
-    <section className="relative w-full py-16 text-white text-center">
-    <h2 className="text-4xl font-bold text-white pb-8 relative inline-block">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-black text-white text-center">
+      <h2 className="text-4xl font-bold pb-8 relative inline-block">
         Our Works
-        {/* Flowing Underline */}
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
@@ -54,7 +53,8 @@ const WorksSection = () => {
           className="h-[3px] bg-white mt-2 mx-auto"
         />
       </h2>
-      <div className="max-w-6xl mx-auto px-4">
+
+      <div className="max-w-6xl w-full mx-auto px-4">
         <div className="rounded-lg overflow-hidden shadow-2xl">
           <div className="flex flex-col md:flex-row">
             {/* Image Section */}
@@ -68,8 +68,7 @@ const WorksSection = () => {
                   animate={{ x: "0%" }}
                   exit={{ x: direction > 0 ? "-100%" : "100%" }}
                   transition={{ type: "tween", duration: 0.6, ease: "easeInOut" }}
-                  className="w-full h-full object-contain object-center"
-                  style={{ minHeight: "400px", maxHeight: "600px" }}
+                  className="w-full h-[80vh] object-cover"
                 />
               </AnimatePresence>
             </div>
@@ -84,7 +83,7 @@ const WorksSection = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="text-center"
               >
-                <p className="text-lg text-white">{works[currentWork].description}</p>
+                <p className="text-lg">{works[currentWork].description}</p>
 
                 {/* Navigation Dots */}
                 <div className="mt-8 flex justify-center space-x-2">
