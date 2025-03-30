@@ -5,49 +5,56 @@ import { FaPenNib, FaCubes, FaUsers, FaBoxOpen, FaPaintBrush, FaCube, FaTheaterM
 const services = [
   {
     icon: <FaPenNib size={50} className="text-blue-500" />, 
-    category: "Pre Production",
+    category: "Pre-Production Services",
     items: [
-      { icon: <FaPaintBrush />, name: "Storyboard development" },
-      { icon: <FaTheaterMasks />, name: "Animatics" },
-      { icon: <FaLightbulb />, name: "Previsualization" },
-      { icon: <FaCube />, name: "Character Design" },
-      { icon: <FaPenNib />, name: "Scale drawing" },
-      { icon: <FaPaintBrush />, name: "Concept Painting" },
-      { icon: <FaCubes />, name: "Sculpting" }
+      { icon: <FaPaintBrush />, name: "Storyboard Development" },
+      { icon: <FaTheaterMasks />, name: "Animatics & Previsualization" },
+      { icon: <FaLightbulb />, name: "Concept Development" },
+      { icon: <FaCube />, name: "Character & Asset Design" },
+      { icon: <FaPenNib />, name: "Technical Scale Drawings" },
+      { icon: <FaPaintBrush />, name: "Environmental Concept Art" },
+      { icon: <FaCubes />, name: "3D Sculpting & Prototyping" }
     ]
   },
   {
     icon: <FaCubes size={50} className="text-blue-500" />, 
-    category: "3D Production",
+    category: "3D Production & Animation",
     items: [
-      { icon: <FaCube />, name: "3D Character Modeling" },
-      { icon: <FaPaintBrush />, name: "Texturing" },
-      { icon: <FaTheaterMasks />, name: "Facial expressions" },
-      { icon: <FaCubes />, name: "Rigging" },
-      { icon: <FaLightbulb />, name: "Animation" },
-      { icon: <FaPenNib />, name: "Lighting" },
-      { icon: <FaCube />, name: "Rendering" }
+      { icon: <FaCube />, name: "3D Character & Environment Modeling" },
+      { icon: <FaPaintBrush />, name: "High-Quality Texturing & Shading" },
+      { icon: <FaTheaterMasks />, name: "Advanced Facial & Motion Capture" },
+      { icon: <FaCubes />, name: "Rigging & Skinning" },
+      { icon: <FaLightbulb />, name: "Cinematic Animation Sequences" },
+      { icon: <FaPenNib />, name: "Lighting & Scene Optimization" },
+      { icon: <FaCube />, name: "Rendering & Post-Production" }
     ]
   },
   {
     icon: <FaUsers size={50} className="text-blue-500" />, 
-    category: "Market and Customers",
+    category: "Business & Client Solutions",
     items: [
-      { icon: <FaUsers />, name: "2D/3D Works" },
-      { icon: <FaCube />, name: "Workstation Rental" },
-      { icon: <FaLightbulb />, name: "Customer Relations" }
+      { icon: <FaUsers />, name: "Custom 2D & 3D Content Development" },
+      { icon: <FaCube />, name: "High-Performance Workstation Rentals" },
+      { icon: <FaLightbulb />, name: "Strategic Client Consultation & Support" },
+      { icon: <FaUsers />, name: "End-to-End Project Management" },
+      { icon: <FaCube />, name: "Industry-Specific Animation Solutions" },
+      { icon: <FaLightbulb />, name: "Cross-Platform Content Optimization" }
     ]
   },
   {
     icon: <FaBoxOpen size={50} className="text-blue-500" />, 
-    category: "Products and Services",
+    category: "Premium Creative Services",
     items: [
-      { icon: <FaPaintBrush />, name: "Creative Solutions" },
-      { icon: <FaLightbulb />, name: "Competitive Material" },
-      { icon: <FaUsers />, name: "Unique Projects" }
+      { icon: <FaPaintBrush />, name: "Innovative Design & Branding Solutions" },
+      { icon: <FaLightbulb />, name: "High-Impact Marketing & Visual Materials" },
+      { icon: <FaUsers />, name: "Tailored Creative Project Execution" },
+      { icon: <FaBoxOpen />, name: "Interactive Media & Experiential Design" },
+      { icon: <FaPaintBrush />, name: "Custom Merchandise & Product Design" },
+      { icon: <FaLightbulb />, name: "Augmented Reality & Virtual Reality Integration" }
     ]
   }
 ];
+
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(null);
