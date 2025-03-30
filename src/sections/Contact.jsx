@@ -56,13 +56,13 @@ const ContactPage = () => {
               <h3 className="uppercase text-sm tracking-wider mb-4">Reach us through</h3>
               <div className="w-8 h-1 bg-gray-700 mb-6"></div>
               <div className="flex items-start mb-4">
-                <p>123, Any Street North, Your City, Country Name, P.O 3554</p>
+                <p>INT Animations,#3, 1st Avenue, 1st Floor,Ashok Nagar, Chennai - 600 083</p>
               </div>
               <div className="flex items-start mb-4">
-                <p>+1 234 567 8902</p>
+                <p>+91 9884691234</p>
               </div>
               <div className="flex items-start">
-                <p>contact@yoursite.com</p>
+                <p>ramanigold@gmail.com</p>
               </div>
             </div>
             <div>
@@ -72,7 +72,14 @@ const ContactPage = () => {
               
               <div className="flex items-center mb-3">
                 <div className="text-yellow-500 mr-3">•</div>
-                <p>Youtube</p>
+                <a 
+                  href="https://www.youtube.com/@INTMedia" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  YouTube
+                </a>
               </div>
               
               <div className="flex items-center mb-3">
